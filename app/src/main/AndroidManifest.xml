@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.csit451sapien.jigsaw" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <!-- this is the LOGIN FORM activity-->
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- this ends the LOGIN FORM activity-->
+        <!-- this ends the REGISTER FORM activity-->
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- this ends the REGISTER FORM activity-->
+        <!-- this is the HOME LANDING PAGE activity-->
+        <activity
+            android:name=".JigsawHomePage"
+            android:label="@string/title_activity_jigsaw_home_page"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.example.csit451sapien.jigsaw.JigsawHomePage" />
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- this ends the HOME LANDING PAGE activity-->
+        <!-- this is the ERROR LOGIN PAGE activity (login not successful)-->
+        <activity
+            android:name=".ErrorLogin"
+            android:label="@string/title_activity_error_login"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!-- this ends the ERROR LOGIN PAGE activity (login not successful)-->
+    </application>
+
+</manifest>
